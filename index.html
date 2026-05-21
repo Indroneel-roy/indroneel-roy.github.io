@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indroneel Roy | ML Research | Computer Vision & Medical Imaging</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+        <div class="logo">Indroneel Roy</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+        <div class="logo">Indroneel Roy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/indro.jpg" alt="Indroneel Roy profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">ML Researcher</p>
+            <h1 class="title">Indroneel Roy</h1>
+            <p class="section__text__p2">Computer Vision · Medical Imaging · Deep Learning</p>
+            <p class="research-statement">
+                Researching hybrid CNN-Transformer architectures and diffusion-based self-supervised learning
+                for medical image segmentation, with a focus on multi-organ abdominal CT analysis.
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_modified.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Get in Touch</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/indroneel68/'" title="LinkedIn" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Indroneel-roy'" title="GitHub" />
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <p class="section__text__p1 reveal">Get To Know More</p>
+        <h1 class="title reveal">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container reveal">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Research Experience</h3>
+                        <p>3+ years <br />ML & Computer Vision Research</p>
+                    </div>
+                    <div class="details-container reveal">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Sc. in Electrical & Electronic Engineering (EEE)</p>
+                    </div>
+                </div>
+                <div class="research-interests-container reveal">
+                    <h3 class="interests-title">Research Interests</h3>
+                    <div class="interests-tags">
+                        <span class="interest-tag">Medical Image Segmentation</span>
+                        <span class="interest-tag">Hybrid CNN-Transformer</span>
+                        <span class="interest-tag">Diffusion Models</span>
+                        <span class="interest-tag">Self-Supervised Learning</span>
+                        <span class="interest-tag">Multi-Organ CT Analysis</span>
+                        <span class="interest-tag">Deep Learning</span>
+                    </div>
+                </div>
+                <div class="text-container reveal">
+                    <p>
+                        I am a machine learning researcher specializing in computer vision and medical image analysis.
+                        My current research focuses on designing novel deep learning architectures particularly
+                        hybrid CNN-Transformer models and diffusion-based self-supervised frameworks for precise
+                        segmentation of anatomical structures in clinical imaging. I am passionate about bridging
+                        the gap between cutting-edge research and real-world medical applications, translating
+                        complex model designs into deployable, high-performance systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!-- EXPERIENCE / SKILLS SECTION -->
+    <section id="experience">
+        <p class="section__text__p1 reveal">Technical</p>
+        <h1 class="title reveal">Research Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="details-container reveal">
+                    <h2 class="experience-sub-title">Core ML & Python</h2>
+                    <div class="article-container">
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Python</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>PyTorch</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Scikit-Learn</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Pandas</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>NumPy</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>SQL</h3><p>Intermediate</p></div></article>
+                    </div>
+                </div>
+
+                <div class="details-container reveal">
+                    <h2 class="experience-sub-title">Computer Vision</h2>
+                    <div class="article-container">
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>CNN Architectures</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Hybrid CNN-Transformer</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Image Segmentation</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Object Detection</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Medical Imaging</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>3D Reconstruction</h3><p>Intermediate</p></div></article>
+                    </div>
+                </div>
+
+                <div class="details-container reveal">
+                    <h2 class="experience-sub-title">Research Methods</h2>
+                    <div class="article-container">
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Diffusion Models</h3><p>Intermediate</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Semi-Supervised Learning</h3><p>Intermediate</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Attention Mechanisms</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Ablation Studies</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Benchmarking</h3><p>Experienced</p></div></article>
+                    </div>
+                </div>
+
+                <div class="details-container reveal">
+                    <h2 class="experience-sub-title">Generative AI</h2>
+                    <div class="article-container">
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>LangChain</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>LangGraph</h3><p>Intermediate</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Agentic AI Chatbot</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Multimodal Agentic AI</h3><p>Intermediate</p></div></article>
+                    </div>
+                </div>
+
+                <div class="details-container reveal">
+                    <h2 class="experience-sub-title">Deployment & DevOps</h2>
+                    <div class="article-container">
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>FastAPI</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Streamlit</h3><p>Experienced</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>AWS</h3><p>Intermediate</p></div></article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#research'" />
+    </section>
+
+    <!-- CURRENT RESEARCH SECTION -->
+    <section id="research">
+        <p class="section__text__p1 reveal">Ongoing Work</p>
+        <h1 class="title reveal">Current Research</h1>
+        <p class="research-subtitle reveal">Advancing deep learning methods for medical image understanding</p>
+
+        <div class="research-container">
+
+            <!-- Research Card 1: MSHFNet -->
+            <div class="research-card reveal">
+                <div class="research-header">
+                    <div class="research-icon-wrapper">
+                        <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+                            <path d="M8 12h8M12 8v8"/>
+                            <circle cx="8" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+                            <circle cx="16" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+                            <circle cx="12" cy="8" r="1.5" fill="currentColor" stroke="none"/>
+                            <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <span class="research-status">In Progress</span>
+                </div>
+
+                <h2 class="research-title">MSHFNet: Multi-Scale Hybrid Fusion Network for Precise Multi-Organ Abdominal CT Segmentation</h2>
+
+                <p class="research-description">
+                    A novel multi-scale hybrid fusion architecture that combines convolutional and transformer-based
+                    feature extraction pathways to achieve precise segmentation of multiple abdominal organs in CT scans.
+                    The network leverages multi-scale feature fusion to capture both fine-grained local structures
+                    and long-range anatomical context simultaneously.
+                </p>
+
+                <div class="research-objectives">
+                    <h3>Key Objectives</h3>
+                    <ul>
+                        <li>Design a multi-scale hybrid encoder fusing CNN local features with Transformer global context for abdominal organ boundaries</li>
+                        <li>Develop a cross-scale feature fusion module to integrate representations across spatial resolutions</li>
+                        <li>Achieve robust simultaneous segmentation of multiple organs including liver, spleen, kidneys, and pancreas</li>
+                        <li>Evaluate on public CT benchmarks (BTCV, CHAOS) with Dice and HD95 metrics</li>
+                    </ul>
+                </div>
+
+                <div class="research-tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Transformer</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">U-Net</span>
+                        <span class="tech-tag">Medical CT Imaging</span>
+                        <span class="tech-tag">Multi-Scale Fusion</span>
+                    </div>
+                </div>
+
+                <div class="research-progress">
+                    <div class="progress-header">
+                        <span>Progress</span>
+                        <span class="progress-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Card 2: Diffusion + SSL -->
+            <div class="research-card reveal">
+                <div class="research-header">
+                    <div class="research-icon-wrapper diffusion">
+                        <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
+                            <path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
+                        </svg>
+                    </div>
+                    <span class="research-status diffusion-status">In Progress</span>
+                </div>
+
+                <h2 class="research-title">Diffusion Model Integration in Semi-Supervised Learning for Image Segmentation</h2>
+
+                <p class="research-description">
+                    Exploring the integration of diffusion probabilistic models within a semi-supervised learning
+                    framework to improve segmentation performance under limited annotation regimes. The approach
+                    leverages the generative power of diffusion models to learn rich, transferable visual representations
+                    without requiring dense pixel-level labels during pre-training.
+                </p>
+
+                <div class="research-objectives">
+                    <h3>Key Objectives</h3>
+                    <ul>
+                        <li>Integrate denoising diffusion probabilistic models (DDPM) as a pretext task for semi-supervised feature learning</li>
+                        <li>Design a unified pre-training strategy that conditions diffusion on semantic structure for downstream segmentation</li>
+                        <li>Evaluate representation quality under low-label regimes on medical and natural image benchmarks</li>
+                        <li>Reduce dependency on large annotated datasets while maintaining competitive segmentation accuracy</li>
+                    </ul>
+                </div>
+
+                <div class="research-tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Diffusion Models</span>
+                        <span class="tech-tag">DDPM</span>
+                        <span class="tech-tag">Self-Supervised Learning</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Contrastive Learning</span>
+                        <span class="tech-tag">Semi-Supervised</span>
+                    </div>
+                </div>
+
+                <div class="research-progress">
+                    <div class="progress-header">
+                        <span>Progress</span>
+                        <span class="progress-percentage">25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill diffusion-fill" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <p class="section__text__p1 reveal">Browse My Recent</p>
+        <h1 class="title reveal">Projects</h1>
+        <div class="projects-container">
+
+            <!-- MSHFNet Project -->
+            <div class="project-card reveal">
+                <div class="project-img-container">
+                    <img src="./assets/synapse.png" alt="MSHFNet Multi-Organ Segmentation" class="project-img" />
+                    <div class="project-overlay">
+                        <span class="project-tag">Medical Imaging</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">MSHFNet: Multi-Scale Hybrid Fusion Network for Multi-Organ Abdominal CT Segmentation</h2>
+                    <p class="project-description">Novel multi-scale hybrid fusion architecture combining CNN and Transformer pathways for precise simultaneous segmentation of abdominal organs in CT scans</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">Transformer</span>
+                        <span class="tech-badge">U-Net</span>
+                        <span class="tech-badge">CT Imaging</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-project" onclick="location.href='https://github.com/Indroneel-roy/MSHFNet'">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--polyb-->
+
+            <div class="project-card reveal">
+            <div class="project-img-container">
+                <img src="./assets/polyb.jpg" alt="HybridCNN-Polyp-Segmentation" class="project-img" />
+                <div class="project-overlay">
+                    <span class="project-tag">Deep Learning</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">HybridCNN-Polyp-Segmentation</h2>
+                <p class="project-description">Novel hybrid CNN architecture combining multiple CNN models for enhanced feature extraction and accuracy</p>
+                <div class="project-tech">
+                    <span class="tech-badge">PyTorch</span>
+                    <span class="tech-badge">CNN</span>
+                    <span class="tech-badge">U-Net</span>
+                    <span class="tech-badge">ResNet-50</span>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-project" onclick="location.href='https://github.com/Indroneel-roy/HybridCNN-Polyp-Segmentation'">
+                        <span>Github</span>
+               
+                    </button>
+                </div>
+            </div>
+        </div>
+            
+
+            <!-- Agentflow Chatbot -->
+            <div class="project-card reveal">
+                <div class="project-img-container">
+                    <img src="./assets/workflow.png" alt="LangGraph Chatbot" class="project-img" />
+                    <div class="project-overlay">
+                        <span class="project-tag">Generative AI</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Agentflow-Chatbot — Multi-Tool Conversational AI</h2>
+                    <p class="project-description">Multi-tool conversational AI with advanced agent capabilities using LangGraph and LangChain</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">LangGraph</span>
+                        <span class="tech-badge">LangChain</span>
+                        <span class="tech-badge">Python</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-project" onclick="location.href='https://github.com/Indroneel-roy/agentflow-chatbot?tab=readme-ov-file'">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wheat Detection -->
+            <div class="project-card reveal">
+                <div class="project-img-container">
+                    <img src="./assets/wheat.jpg" alt="Wheat Detection" class="project-img" />
+                    <div class="project-overlay">
+                        <span class="project-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Vision-Based Wheat Detection</h2>
+                    <p class="project-description">Deep learning model for automated wheat head detection and analysis using advanced computer vision techniques</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">YOLO</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-project" onclick="location.href='https://github.com/Indroneel-roy/vision-based-wheat-detection?tab=readme-ov-file'">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cassava Disease Detection -->
+            <div class="project-card reveal">
+                <div class="project-img-container">
+                    <img src="./assets/casava_.jpg" alt="Cassava Disease Detection" class="project-img" />
+                    <div class="project-overlay">
+                        <span class="project-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Cassava Disease Detection</h2>
+                    <p class="project-description">CNN-based system for identifying and classifying diseases in cassava plants using image recognition</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">CNN</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Streamlit</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-project" onclick="location.href='https://github.com/Indroneel-roy/cassava-leaf-disease-classification'">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#blog'" />
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog">
+        <p class="section__text__p1 reveal">Thoughts & Notes</p>
+        <h1 class="title reveal">Blog</h1>
+        <p class="blog-subtitle reveal">Research notes, paper summaries, and insights from my work in ML and medical imaging</p>
+
+        <div class="blog-container">
+
+            <div class="blog-card reveal">
+                <div class="blog-card-header">
+                    <span class="blog-tag">Research Note</span>
+                    <span class="blog-read-time">Part 1</span>
+                </div>
+                <h2 class="blog-title">How Attention Mechanisms Are Revolutionizing Medical Image Segmentation — Part 1: Classical Attention</h2>
+                <p class="blog-excerpt">A deep dive into how classical attention mechanisms from squeeze-and-excitation to channel attention are transforming the way deep learning models understand and segment medical images with greater precision.</p>
+                <div class="blog-footer">
+                    <span class="blog-date">Published on Medium</span>
+                    <a href="https://medium.com/@indroneelroy83/how-attention-mechanisms-are-revolutionizing-medical-image-segmentation-part-1-classical-fe8b165131a0" target="_blank" class="blog-read-link">Read on Medium →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-card-header">
+                    <span class="blog-tag">Research Note</span>
+                    <span class="blog-read-time">Part 2</span>
+                </div>
+                <h2 class="blog-title">How Attention Mechanisms Are Revolutionizing Medical Image Segmentation — Part 2: The Transformer Era</h2>
+                <p class="blog-excerpt">Building on classical attention, this part explores how Vision Transformers and cross-attention designs push segmentation performance further and why combining them with CNNs is becoming the new standard.</p>
+                <div class="blog-footer">
+                    <span class="blog-date">Published on Medium</span>
+                    <a href="https://medium.com/@indroneelroy83/how-attention-mechanisms-are-revolutionizing-medical-image-segmentation-part-2-the-transformer-0f6aaac53211" target="_blank" class="blog-read-link">Read on Medium →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-card-header">
+                    <span class="blog-tag">Deep Dive</span>
+                    <span class="blog-read-time">Technical</span>
+                </div>
+                <h2 class="blog-title">CNN Architecture Deep Dive</h2>
+                <p class="blog-excerpt">A comprehensive walkthrough of convolutional neural network architectures from AlexNet to EfficientNet examining how each design choice impacts feature extraction, depth, and performance on visual tasks.</p>
+                <div class="blog-footer">
+                    <span class="blog-date">Published on Medium</span>
+                    <a href="https://medium.com/@indroneelroy83/cnn-architecture-deep-dive-4ed57a7efb7d" target="_blank" class="blog-read-link">Read on Medium →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blog-cta reveal">
+            <a href="https://medium.com/@indroneelroy83" target="_blank" class="btn btn-color-2 btn-blog-all">View All Posts on Medium</a>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <p class="section__text__p1 reveal">Get in Touch</p>
+        <h1 class="title reveal">Contact Me</h1>
+        <p class="contact-subtitle reveal">Open to research collaborations, discussions, and opportunities</p>
+        <div class="contact-container reveal">
+            <div class="contact-card">
+                <div class="contact-icon-wrapper">
+                    <img src="./assets/email.png" alt="Email icon" class="contact-icon" />
+                </div>
+                <h3>Email</h3>
+                <a href="mailto:indroneel1000@gmail.com" class="contact-link-btn">Send a message →</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon-wrapper">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="contact-icon" />
+                </div>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/indroneel68/" target="_blank" class="contact-link-btn">Connect with me →</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon-wrapper">
+                    <img src="./assets/github.png" alt="GitHub icon" class="contact-icon" />
+                </div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/Indroneel-roy" target="_blank" class="contact-link-btn">View my work →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Indroneel Roy. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // ===== SCROLL REVEAL =====
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, i * 120);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealElements.forEach(el => observer.observe(el));
+
+        // ===== NAV SCROLL EFFECT =====
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('desktop-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
