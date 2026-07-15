@@ -59,7 +59,7 @@
                 for medical image segmentation, with a focus on multi-organ abdominal CT analysis.
             </p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_modified.pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Get in Touch</button>
             </div>
             <div id="socials-container">
@@ -188,6 +188,59 @@
 
         <div class="research-container">
 
+            <!-- Research Card 0: EdgeMambaFormer (insert BEFORE the MSHFNet card) -->
+            <div class="research-card reveal">
+                <div class="research-header">
+                    <div class="research-icon-wrapper">
+                        <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12h4l2-7 4 14 2-7h6"/>
+                        </svg>
+                    </div>
+                    <span class="research-status">In Review</span>
+                </div>
+
+                <h2 class="research-title">EdgeMambaFormer: Edge-Guided Cross-Scale Mamba Transformer with Wavelet-Based Boundary Attention for Colonoscopy Polyp Segmentation</h2>
+
+                <p class="research-description">
+                    A tri-hybrid CNN–Mamba–Transformer architecture built on a PVT v2-B2 encoder, combining a
+                    parameter-free Wavelet Edge Attention Gate (WaveletEAG), a bidirectional Cross-Scale Mamba
+                    Module (CSMM) for linear-complexity global context, and a dual-branch (local window + global)
+                    Transformer decoder — achieving state-of-the-art results on 3 of 4 independently trained
+                    colonoscopy polyp benchmarks.
+                </p>
+
+                <div class="research-objectives">
+                    <h3>Key Contributions</h3>
+                    <ul>
+                        <li>Introduced WaveletEAG, using a 2-D Haar Discrete Wavelet Transform to extract multi-directional boundary signals (horizontal, vertical, diagonal) without any learned convolutional edge detector, fused with semantic context via a learnable sigmoid gate</li>
+                        <li>Designed CSMM, which jointly tokenises multi-scale encoder features into a single sequence and applies a bidirectional selective-scan SSM (S6) for cross-scale global dependency modelling at linear complexity</li>
+                        <li>Achieved 0.935 mDice / 0.884 mIoU on Kvasir-SEG, 0.941/0.892 on CVC-ClinicDB, and 0.889/0.812 on CVC-ColonDB (+8.1 pp mDice over Polyp-PVT), with a compact 25.4M-parameter footprint</li>
+                        <li>Validated each module via ablation; manuscript prepared for submission to Computers in Biology and Medicine</li>
+                    </ul>
+                </div>
+
+                <div class="research-tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Mamba (SSM)</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">Wavelet Transform</span>
+                        <span class="tech-tag">PVT v2-B2</span>
+                    </div>
+                </div>
+
+                <div class="research-progress">
+                    <div class="progress-header">
+                        <span>Progress</span>
+                        <span class="progress-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Research Card 1: MSHFNet -->
             <div class="research-card reveal">
                 <div class="research-header">
@@ -201,7 +254,7 @@
                             <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none"/>
                         </svg>
                     </div>
-                    <span class="research-status">In Progress</span>
+                    <span class="research-status">In Review</span>
                 </div>
 
                 <h2 class="research-title">MSHFNet: Multi-Scale Hybrid Fusion Network for Precise Multi-Organ Abdominal CT Segmentation</h2>
@@ -238,10 +291,10 @@
                 <div class="research-progress">
                     <div class="progress-header">
                         <span>Progress</span>
-                        <span class="progress-percentage">80%</span>
+                        <span class="progress-percentage">95%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%"></div>
+                        <div class="progress-fill" style="width: 95%"></div>
                     </div>
                 </div>
             </div>
@@ -303,7 +356,10 @@
 
         </div>
 
+        
+
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+
     </section>
 
     <!-- PROJECTS SECTION -->
@@ -311,6 +367,31 @@
         <p class="section__text__p1 reveal">Browse My Recent</p>
         <h1 class="title reveal">Projects</h1>
         <div class="projects-container">
+
+            <!-- EdgeMambaFormer Project -->
+            <div class="project-card reveal">
+                <div class="project-img-container">
+                    <img src="./assets/EdgeMambaFormer.png" alt="EdgeMambaFormer Polyp Segmentation" class="project-img" />
+                    <div class="project-overlay">
+                        <span class="project-tag">Medical Imaging</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">EdgeMambaFormer: Wavelet-Guided Mamba-Transformer for Polyp Segmentation</h2>
+                    <p class="project-description">Tri-hybrid CNN–Mamba–Transformer architecture with wavelet-based edge attention, achieving SOTA results on 3 of 4 colonoscopy polyp benchmarks at a compact 25.4M-parameter footprint</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">Mamba (SSM)</span>
+                        <span class="tech-badge">Transformers</span>
+                        <span class="tech-badge">PVT v2-B2</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-project" onclick="location.href='https://github.com/Indroneel-roy/EdgeMambaFormer'">
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             <!-- MSHFNet Project -->
             <div class="project-card reveal">
